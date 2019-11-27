@@ -1,22 +1,171 @@
 .App {
-  text-align: center;
+	text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.container {
+	border: 0.1px solid grey;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px 0 grey;
+	width: 200px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/********************************************/
+/* 
+* Design by Robert Mayer:https://goo.gl/CJ7yC8
+*
+*I intentionally left out the line that was supposed to be below the subheader simply because I don't like how it looks.
+*
+* Chronicle Display Roman font was substituted for similar fonts from Google Fonts.
+*/
+
+body {
+	background-color: whitesmoke;
 }
 
-.App-link {
-  color: #09d3ac;
+.wrapper {
+	height: 420px;
+	width: 654px;
+	margin: 50px auto;
+	border-radius: 7px 7px 7px 7px;
+	/* VIA CSS MATIC https://goo.gl/cIbnS */
+	-webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+.comm-img {
+	float: left;
+	height: 420px;
+	width: 327px;
+}
+
+.comm-img img {
+	border-radius: 7px 0 0 7px;
+}
+
+.comm-info {
+	float: left;
+	height: 420px;
+	width: 327px;
+	border-radius: 0 7px 10px 7px;
+	background-color: #e3f6f5;
+}
+
+.comm-text {
+	height: 100px;
+	width: 327px;
+}
+
+h1 {
+	font-size: 40px;
+	color: #198888;
+}
+.comm-text h1 {
+	font-size: 28px;
+	color: #5eb7b7;
+}
+
+.comm-text hr {
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 16px;
+	border-color: #5eb7b7;
+}
+
+.comm-text h2 {
+	margin: 8px 8px;
+	font-size: 13px;
+	text-align: center;
+	font-family: "Raleway", sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	/* color: #fc7978;  cccfce */
+	color: #c0a403;
+	letter-spacing: 0.2em;
+}
+
+.comm-text p {
+	height: auto;
+	margin: 0 0 0 8px;
+	font-family: "Raleway", sans-serif;
+	color: #c0a403;
+	line-height: 1.7em;
+	font-size: 15px;
+	font-weight: normal;
+	overflow: hidden;
+}
+
+span {
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-family: "Raleway", sans-serif;
+	font-size: 16px;
+	color: #5eb7b7;
+	/* color: #272343; */
+}
+
+.home {
+	width: 327px;
+	height: 80px;
+	margin: 8px;
+	padding: 8px;
+	border-radius: 0 8px 8px 0px;
+	background-color: #ffffff;
+	text-align: left;
+	border: 0.1px solid #bae8e8;
+	/* box-shadow: 2px 2px 5px 0 grey; */
+	-webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.15);
+	transition: ease-in-out 0.3s;
+}
+.home:hover {
+	margin-left: 12px;
+}
+
+.msg {
+	padding: 16px 8px;
+	font-family: "Raleway", sans-serif;
+	font-size: 12px;
+	color: #c0a403;
+}
+.headerText {
+	margin: 16px 64px;
+	font-size: 16px;
+	text-align: center;
+	font-family: "Raleway", sans-serif;
+	font-weight: 400;
+	color: #c0a403;
+	letter-spacing: 0.2em;
+}
+@media (max-width: 600px) {
+	.wrapper {
+		height: 800px;
+		width: 90%;
+		margin-top: 50px;
+		display: grid;
+	}
+	.comm-img {
+		width: 100%;
+	}
+	.comm-info {
+		width: 100%;
+		border-radius: 0 7px 10px 7px;
+		background-color: #ffffff;
+		align-items: center;
+	}
+	.comm-text {
+		height: 100px;
+		width: 100%;
+	}
+	.home {
+		width: 80%;
+		height: 75px;
+		margin-bottom: 8px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 8px;
+	}
 }
