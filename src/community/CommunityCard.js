@@ -12,7 +12,10 @@ function communityCard(props) {
 						alt={props.community.name}
 					/>
 				) : (
-					<p>{props.community.name}</p>
+					<>
+						<br />
+						<h1>{props.community.name}</h1> <hr />
+					</>
 				)}
 			</div>
 			<div className='comm-info'>
