@@ -1,5 +1,7 @@
 After cloning the repository, from the project directory, you can run:
+### `npm install` 
 
+and then 
 ### `npm start`
 
 This runs the app in the development mode.<br />
